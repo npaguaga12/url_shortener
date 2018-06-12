@@ -1,0 +1,14 @@
+<h1>Enter a URL to shorten</h1>
+
+<%= form_with(model: @website, local:true) do |form| %>
+<div class="field">
+  <%= form.label :url %>
+  <%= form.text_field :url %>
+</div>
+
+<div class="action">
+  <%= form.submit "Submit" %>
+</div>
+
+
+<% end %>
